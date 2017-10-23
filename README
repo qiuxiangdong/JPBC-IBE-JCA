@@ -1,1 +1,10 @@
-mvn package
+An Identity-Based Encryption JCA provider
+If you want to use the IBE encryption in the same way as other encryption algorithms provided by some verified JCA providers, 
+you need to apply for a certificate as shown by:
+
+https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/HowToImplAProvider.html
+
+Although we did not provide the certificate, you could still use the IBE encryption in the way shown in the KEM-IBE.java.
+
+  cd <root directory>
+  mvn package
