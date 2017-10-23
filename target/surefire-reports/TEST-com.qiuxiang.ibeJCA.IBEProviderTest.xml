@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.qiuxiang.ibeJCA.IBEProviderTest" time="0.087" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/qiuxiangdong/Documents/workspace/ibeJCA"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/qiuxiangdong/Documents/workspace/ibeJCA"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/xs/yvnhr18j0zj4384zyt34n4tw0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/qiuxiangdong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="library.jansi.path" value="/usr/local/maven/lib/jansi-native/osx64"/>
+    <property name="user.home" value="/Users/qiuxiangdong"/>
+    <property name="user.timezone" value="America/Phoenix"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="qiuxiangdong"/>
+    <property name="java.class.path" value="/usr/local/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/qiuxiangdong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.qiuxiang.ibeJCA.IBEProviderTest" name="testCipher" time="0.087">
+    <error message="JCE cannot authenticate the provider QiuxiangDong" type="java.lang.SecurityException">java.lang.SecurityException: JCE cannot authenticate the provider QiuxiangDong
+	at javax.crypto.Cipher.getInstance(Cipher.java:657)
+	at com.qiuxiang.ibeJCA.IBEProviderTest.testCipher(IBEProviderTest.java:27)
+Caused by: java.lang.SecurityException: Cannot verify jar:file:/Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes/!/
+	at javax.crypto.JarVerifier.verifySingleJar(JarVerifier.java:446)
+	at javax.crypto.JarVerifier.verifyJars(JarVerifier.java:361)
+	at javax.crypto.JarVerifier.verify(JarVerifier.java:289)
+	at javax.crypto.JceSecurity.verifyProviderJar(JceSecurity.java:159)
+	at javax.crypto.JceSecurity.getVerificationResult(JceSecurity.java:185)
+	at javax.crypto.Cipher.getInstance(Cipher.java:653)
+	... 29 more
+Caused by: java.security.PrivilegedActionException: java.io.FileNotFoundException: /Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes (Is a directory)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.crypto.JarVerifier.verifySingleJar(JarVerifier.java:424)
+	... 34 more
+Caused by: java.io.FileNotFoundException: /Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes (Is a directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.&lt;init&gt;(ZipFile.java:225)
+	at java.util.zip.ZipFile.&lt;init&gt;(ZipFile.java:155)
+	at java.util.jar.JarFile.&lt;init&gt;(JarFile.java:166)
+	at java.util.jar.JarFile.&lt;init&gt;(JarFile.java:103)
+	at sun.net.www.protocol.jar.URLJarFile.&lt;init&gt;(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at javax.crypto.JarVerifier$2.run(JarVerifier.java:438)
+	at javax.crypto.JarVerifier$2.run(JarVerifier.java:425)
+	... 36 more
+</error>
+  </testcase>
+</testsuite>

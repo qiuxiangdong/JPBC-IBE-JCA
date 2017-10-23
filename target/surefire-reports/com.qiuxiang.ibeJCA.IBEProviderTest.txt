@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: com.qiuxiang.ibeJCA.IBEProviderTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.087 sec <<< FAILURE!
+testCipher(com.qiuxiang.ibeJCA.IBEProviderTest)  Time elapsed: 0.087 sec  <<< ERROR!
+java.lang.SecurityException: JCE cannot authenticate the provider QiuxiangDong
+	at javax.crypto.Cipher.getInstance(Cipher.java:657)
+	at com.qiuxiang.ibeJCA.IBEProviderTest.testCipher(IBEProviderTest.java:27)
+Caused by: java.lang.SecurityException: Cannot verify jar:file:/Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes/!/
+	at javax.crypto.JarVerifier.verifySingleJar(JarVerifier.java:446)
+	at javax.crypto.JarVerifier.verifyJars(JarVerifier.java:361)
+	at javax.crypto.JarVerifier.verify(JarVerifier.java:289)
+	at javax.crypto.JceSecurity.verifyProviderJar(JceSecurity.java:159)
+	at javax.crypto.JceSecurity.getVerificationResult(JceSecurity.java:185)
+	at javax.crypto.Cipher.getInstance(Cipher.java:653)
+	... 29 more
+Caused by: java.security.PrivilegedActionException: java.io.FileNotFoundException: /Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes (Is a directory)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.crypto.JarVerifier.verifySingleJar(JarVerifier.java:424)
+	... 34 more
+Caused by: java.io.FileNotFoundException: /Users/qiuxiangdong/Documents/workspace/ibeJCA/target/classes (Is a directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:103)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at javax.crypto.JarVerifier$2.run(JarVerifier.java:438)
+	at javax.crypto.JarVerifier$2.run(JarVerifier.java:425)
+	... 36 more
+
