@@ -8,3 +8,5 @@ Although we did not provide the certificate, you could still use the IBE encrypt
 
   cd <root directory>
   mvn package
+
+License: GPLv3 based on the license of the library JPBC used in the implementation. 
