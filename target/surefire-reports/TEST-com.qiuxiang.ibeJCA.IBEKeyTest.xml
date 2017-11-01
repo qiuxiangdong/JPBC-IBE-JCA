@@ -6,7 +6,7 @@
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/qiuxiangdong/Documents/workspace/JPBC-IBE-JCA"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/qiuxiangdong/GitHub/JPBC-IBE-JCA"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/qiuxiangdong/Documents/workspace/JPBC-IBE-JCA"/>
+    <property name="user.dir" value="/Users/qiuxiangdong/GitHub/JPBC-IBE-JCA"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -62,6 +62,6 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.qiuxiang.ibeJCA.IBEKeyTest" name="testGetAlgorithm" time="0"/>
-  <testcase classname="com.qiuxiang.ibeJCA.IBEKeyTest" name="testGetEncoded" time="0"/>
   <testcase classname="com.qiuxiang.ibeJCA.IBEKeyTest" name="testGetFormat" time="0"/>
+  <testcase classname="com.qiuxiang.ibeJCA.IBEKeyTest" name="testGetEncoded" time="0"/>
 </testsuite>
