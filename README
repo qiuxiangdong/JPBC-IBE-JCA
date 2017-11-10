@@ -7,6 +7,6 @@ https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/HowToImpl
 Although we did not provide the certificate, you could still use the IBE encryption in the way shown in the KEM-IBE.java.
 
   cd <root directory>
-  mvn package
+  mvn clean install
 
 License: GPLv3 based on the license of the library JPBC used in the implementation. 
